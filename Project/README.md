@@ -12,7 +12,7 @@
 
 5.) Includes Images, animations, and or other stylistic effects. 
 
-Notes: 
+## Notes: 
 - Making the website responsive is not necessary 
 - Created using Chrome
 
