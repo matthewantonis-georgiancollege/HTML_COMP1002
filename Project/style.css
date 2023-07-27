@@ -1,0 +1,781 @@
+/* Reset some default styles */
+/* Remove default margin and padding for some elements */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Define custom font-face for Montserrat */
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Basic styles and typography */
+
+/* Set box-sizing and hide overflow on the x-axis for the html element */
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Set body styles */
+body {
+    line-height: 1.6;
+    color: #333;
+    font-size: 16px;
+    padding-top: 70px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+}
+
+/* Remove text-decoration and set color for anchor elements */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+/* Logo container */
+.logo {
+    display: inline-block;
+}
+
+/* Logo image styles */
+.logo img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+}
+
+/* Menu button container styles */
+.menu-button-container {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+}
+
+/* Menu button styles */
+.menu-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* Menu button span styles */
+.menu-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Set menu container styles */
+.menu-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 250px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+    padding: 10px;
+    display: none;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Show menu when active class is added */
+.menu-container.active {
+    display: block;
+    transform: translateY(0);
+}
+
+/* Show menu when active class is added */
+.menu.active {
+    display: block;
+}
+
+/* Menu list item styles */
+.menu li {
+    display: block;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+/* Menu anchor element styles */
+.menu a {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 15px;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0.3rem 1.5rem;
+    border-radius: 0;
+    border: 2px solid #dd2020;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Menu anchor element hover styles */
+.menu a:hover {
+    background-color: rgba(221, 32, 32, 0.9);
+    color: #ffffff;
+}
+
+/* Hero / "Nintendo Entertainment System Title*/
+.hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Set the background image for the hero section */
+.hero{
+    background-image: url('../Images/MainBackground2 copy.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Set the text alignment, color, and shadow for the hero content */
+.hero-content {
+    text-align: center;
+    color: #dd2020;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Set the font size, margin, and font-family for the hero title */
+.hero h1 {
+    font-size: 120px;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Set the font size, margin, and font-family for the hero subtitle */
+.hero p {
+    font-size: 90px;
+    margin-bottom: 2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Set the button styles for the ProductButton */
+.ProductButton {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    font-size: 35px;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 0;
+    border: 2px solid #dd2020;
+}
+
+/* Set the hover effect for the ProductButton */
+.ProductButton:hover {
+    background-color: #dd2020;
+}
+
+/* Responsive styles for screens with max-width of 767px */
+@media only screen and (max-width: 767px) {
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .hero p {
+        font-size: 45px;
+    }
+
+    .ProductButton {
+        font-size: 25px;
+    }
+}
+
+/* Features Titles */
+.features-title{
+    align-items: center;
+    text-align: center;
+}
+
+/* Set the font styles, color, shadow, and background gradient for the .power class */
+.power {
+    font-family: "Montserrat", sans-serif;
+    font-size: 65px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to top, #333030, #780a72);
+    padding: 0.1rem 0.1rem 1.2rem 0.1rem;
+}
+
+/* Features */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1.5vw;
+    padding: 3vh 0.1vw 3vh 4vw;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(165, 162, 162), #333030);
+}
+
+/* Media Query - Adjust features layout for smaller screens */
+@media (max-width: 767px) {
+    .features {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Styling for the games displayed on the homepage */
+.MarioHome, .ZeldaHome, .GalagaHome, .MetroidHome, .KirbyHome, .CastlevaniaHome, .FinalFantasyHome, .DonkeyKongHome, .DoubleDragonHome, .ContraHome, .DuckHuntHome, .KidIcarusHome, .MegaManHome {
+    padding: 2rem;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 35px;
+    color: #dd2020;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    outline: 10px outset #0d0c0c;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+/* Game Images */
+.MarioHome {
+    background-image: url('../Images/SuperMarioBrosGIF.gif');
+}
+
+.ZeldaHome {
+    background-image: url('../Images/nes-zelda.gif');
+}
+
+.GalagaHome {
+    background-image: url('../Images/nes-galaga.gif');
+}
+
+.GalagaHome {
+    background-image: url('../Images/nes-galaga.gif');
+}
+
+.MetroidHome {
+    background-image: url('../Images/nes-metroid.gif');
+}
+
+.KirbyHome {
+    background-image: url('../Images/nes-kirby.gif');
+}
+
+.CastlevaniaHome {
+    background-image: url('../Images/nes-castlevania.gif');
+}
+
+.FinalFantasyHome {
+    background-image: url('../Images/nes-final fantasy.gif');
+}
+
+.DonkeyKongHome {
+    background-image: url('../Images/nes-donkeykong.gif');
+}
+
+.DoubleDragonHome {
+    background-image: url('../Images/nes-doubledragon.gif');
+}
+
+.ContraHome {
+    background-image: url('../Images/nes-contra.gif');
+}
+
+.DuckHuntHome {
+    background-image: url('../Images/nes-duckhunt.gif');
+}
+
+.KidIcarusHome {
+    background-image: url('../Images/nes-kidicarus.gif');
+}
+
+.MegaManHome {
+    background-image: url('../Images/nes-megaman.gif');
+}
+
+/* Feature title styling */
+.feature h3 {
+    font-size: 24px;
+    margin-bottom: 0.5rem;
+}
+
+/* Feature description styling */
+.feature p {
+    font-size: 16px;
+}
+
+/* About Company Homepage*/
+.about-company {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 1rem;
+    text-align: left;
+    background-image: linear-gradient(to top, #565252, #a5a2a2);
+    margin-bottom: 50px;
+}
+
+/* About content styling */
+.about-content {
+    margin-left: 2rem;
+    max-width: 1600px;
+}
+
+/* About company title styling */
+.about-company h2 {
+    font-size: 45px;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    color: #ffffff;
+}
+
+/* About company image styling */
+.about-image img {
+    max-width: 300px;
+    height: auto;
+    margin-right: 12vw;
+}
+
+/* About company title bottom border */
+.about-company h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 150%;
+    height: 2px;
+    background-color: #dd2020;
+}
+
+/* About company description styling */
+.about-company p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+}
+
+/* Learn More Button styling */
+.LearnMoreButton {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    font-size: 20px;
+    border-radius: 0;
+    border: 2px solid #dd2020;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Learn More Button hover effect */
+.LearnMoreButton:hover {
+    background-color: #dd2020;
+}
+
+/* Responsive styling for screens with max-width 767px */
+@media only screen and (max-width: 767px) {
+    .about-company {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        margin-left: 0;
+    }
+
+    .about-image img {
+        margin-right: 0;
+        margin-bottom: 2rem;
+        margin-top: 3rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff;
+    color: #0d0c0c;
+    padding: 1rem 1rem;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    position: absolute;
+    width: 100%;
+}
+
+/* Global Footer Styling */
+#global-footer {
+    height: 50px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+/* Responsive styling for screens with max-width 767px */
+@media only screen and (max-width: 767px) {
+    #global-footer {
+        text-align: center;
+    }
+}
+
+/* About Company Page */
+#history2-section {
+    max-width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    background-image: linear-gradient(to top, #333030, #6c6969);
+    margin-bottom: 50px;
+}
+
+/* Container for the text and images */
+.history2-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Container for the text content */
+.history2-text {
+    width: 50%;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+/* Container for the image content */
+.history2-images {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+/* Styling for the images */
+.history2-images img {
+    width: 600px;
+    height: 400px;
+    margin-bottom: 20px;
+    outline: 10px outset #0d0c0c;
+}
+
+/* Styling for the h2 heading */
+#history2-section h2 {
+    width: 10%;
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-right: 1rem;
+    color: #ffffff;
+    position: relative;
+}
+
+/* Styling for the h2 heading underline */
+#history2-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 600%;
+    height: 2px;
+    background-color: #dd2020;
+}
+
+/* Styling for the paragraph text */
+#history2-section p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Media query for screens with a max-width of 2050px */
+@media (max-width: 2050px) {
+    #history2-section {
+        flex-direction: column;
+    }
+
+    .history2-text {
+        width: 60%;
+        text-align: left;
+    }
+
+    .history2-images {
+
+    }
+}
+
+/* Media query for screens with a max-width of 1500px */
+@media (max-width: 1500px) {
+    #history2-section {
+        flex-direction: column;
+    }
+
+    .history2-text {
+        width: 100%;
+        text-align: left;
+    }
+
+    .history2-images {
+        display: none;
+    }
+}
+
+/* Product Website */
+.product-page-container {
+    max-width: 50%;
+    padding: 2rem;
+    box-shadow: 0 0 100px rgb(255, 255, 255);
+    background-color: rgba(197, 0, 0, 0.2);
+    border: 1px solid #333;
+    margin: 100px auto;
+}
+
+/* Product header container */
+/* Background Image for both product and contact page */
+.page-with-background {
+    background-image:   url('../Images/Space.jpg');
+    background-repeat: repeat;
+}
+
+.product-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Product header title styling */
+.product-header h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    color: #ffffff;
+}
+
+/* Media query for screen sizes up to 768px */
+@media (max-width: 768px) {
+    .product-header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Product image container */
+.product-image-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Product image styling */
+.product-image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Product info container */
+.product-info {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* Product info title styling */
+.product-info h2 {
+    font-size: 40px;
+    margin-bottom: 1rem;
+}
+
+/* Related products container */
+.related-products-container {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    padding: 40px;
+}
+
+/* Related products title container */
+.related-products-tile {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Related products title styling */
+.related-products-tile h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+/* Product row container */
+.product-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Product card container */
+.product-card {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Product card image styling */
+.product-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    outline: 10px outset #0d0c0c;
+}
+
+/* Product card title styling */
+.product-card h3 {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Product card description styling */
+.product-card p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Media query for screen sizes up to 767px */
+@media (max-width: 767px) {
+    .product-card {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Contact Page */
+
+/* Main container for the contact page */
+.contact-page-container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 2rem;
+    background-color: rgba(197, 0, 0, 0.5);
+    box-shadow: 0 0 100px rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 80%;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Contact header container */
+.contact-header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+/* Contact header title styling */
+.contact-header h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* Contact form container */
+.contact-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Label styling */
+label{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Input field styling */
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: black;
+    text-align: left;
+}
+
+/* Textarea styling */
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    width: 150px;
+    background-color: #dd2020;
+    color: #ffffff;
+    border: none;
+}
+

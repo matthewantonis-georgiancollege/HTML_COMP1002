@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic HTML tags and structure -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, no follow">
+  <!-- Page title -->
+  <title>Contact Us</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="page-with-background">
+<!-- Global header -->
+<div id="global-header"></div>
+<!-- Contact page container -->
+<div class="contact-page-container">
+  <!-- Contact page header -->
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+  </div>
+  <!-- Contact form container -->
+  <div class="contact-form-container">
+    <!-- Contact form -->
+    <form action="submit-form.php" method="post">
+      <!-- Form fields -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <!-- Submit button -->
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</div>
+
+<!-- Global footer -->
+<div id="global-footer"></div>
+<!-- Global header script -->
+<script src="global-header.js"></script>
+</body>
+</html>
