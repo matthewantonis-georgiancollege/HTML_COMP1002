@@ -12,8 +12,9 @@
 
 5.) Includes Images, animations, and or other stylistic effects. 
 
+6.) Make the site responsive using media queries. 
+
 ## Notes: 
-- Making the website responsive is not necessary 
 - Created using Chrome
 
 ### Assignment Due Date: ~April, 2023
