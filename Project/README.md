@@ -1,4 +1,4 @@
-# Final Project - Retro Website
+# Final Project - Retro Product Website
  
 ## To Complete This Assignment: 
 
