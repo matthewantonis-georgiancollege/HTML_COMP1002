@@ -2,17 +2,17 @@
  
 ## To Complete This Assignment: 
 
-1.) Create a retro website for a product before the internet began. 
+1. Create a retro website for a product before the internet began. 
 
-2.) Utilize 4 HTML pages and at least one CSS and Javascript file.
+2. Utilize 4 HTML pages and at least one CSS and Javascript file.
 
-3.) Files contain valid, well-formatted, error-free code and helpful comments where applicable.
+3. Files contain valid, well-formatted, error-free code and helpful comments where applicable.
 
-4.) Incorporates a background image or gradient to enhance the visual appearance of the interface. 
+4. Incorporates a background image or gradient to enhance the visual appearance of the interface. 
 
-5.) Includes Images, animations, and or other stylistic effects. 
+5. Includes Images, animations, and or other stylistic effects. 
 
-6.) Make the site responsive using media queries. 
+6. Make the site responsive using media queries. 
 
 There may have been more instructions, but I cannot recall
 
