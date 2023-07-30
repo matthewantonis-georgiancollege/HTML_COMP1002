@@ -16,6 +16,12 @@
 
 There may have been more instructions, but I cannot recall
 
+## Preview: 
+
+<p align="center">
+<img width="800" src="https://github.com/matthewantonis-georgiancollege/HTML_COMP1002/assets/122380719/1521bec3-4b9e-4c8f-8a73-491383448856">
+<p/>
+ 
 ## Notes: 
 - Created using Chrome and the IDE PHP Storm
 
